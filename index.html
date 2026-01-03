@@ -3,53 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Resmi Desa Cisewu - Kabupaten Garut</title>
+    <title>Website Resmi Desa Cisewu - Kabupaten Garut</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        :root { --sid-blue: #2c3e50; --sid-green: #27ae60; --sid-light: #f8f9fa; }
+        :root { --sid-blue: #2c3e50; --sid-green: #27ae60; --sid-orange: #f39c12; --sid-light: #f8f9fa; }
         body { background-color: var(--sid-light); font-family: 'Segoe UI', Roboto, sans-serif; color: #333; line-height: 1.8; }
-        .header-main { background: white; padding: 20px 0; border-bottom: 5px solid var(--sid-green); }
-        .logo-img { max-height: 80px; width: auto; }
-        .nav-sid { background: var(--sid-blue); }
-        .nav-sid .nav-link { color: white !important; font-weight: 600; text-transform: uppercase; font-size: 0.85rem; padding: 12px 15px !important; }
-        .nav-sid .nav-link:hover { background: var(--sid-green); }
-        .sejarah-full { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: justify; border-top: 5px solid var(--sid-green); margin-bottom: 30px; }
+        .top-bar { background: #1a252f; color: white; padding: 8px 0; font-size: 0.85rem; }
+        .header-main { background: white; padding: 25px 0; border-bottom: 5px solid var(--sid-green); }
+        .logo-img { max-height: 85px; width: auto; }
+        .nav-sid { background: var(--sid-blue); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .nav-sid .nav-link { color: rgba(255,255,255,0.9) !important; font-weight: 600; padding: 12px 15px !important; font-size: 0.85rem; text-transform: uppercase; }
+        .nav-sid .nav-link:hover { background: var(--sid-green); color: white !important; }
+        .sejarah-full { background: white; padding: 45px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: justify; border-top: 5px solid var(--sid-green); margin-bottom: 30px; }
+        .sejarah-full h2 { color: var(--sid-blue); font-weight: 800; margin-bottom: 30px; border-bottom: 2px solid #eee; padding-bottom: 15px; }
         .highlight { font-weight: bold; color: var(--sid-green); }
-        .widget-title { background: var(--sid-blue); color: white; padding: 10px; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; border-left: 4px solid var(--sid-green); }
+        .widget-title { background: var(--sid-blue); color: white; padding: 12px; font-size: 0.9rem; font-weight: bold; border-left: 4px solid var(--sid-green); text-transform: uppercase; }
         .widget-box { background: white; border: 1px solid #ddd; margin-bottom: 25px; border-radius: 4px; overflow: hidden; }
-        .product-card { border: none; border-radius: 12px; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.05); height: 100%; }
+        .product-card { border: none; border-radius: 12px; transition: 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.05); height: 100%; text-align: center; }
         .product-card:hover { transform: translateY(-5px); }
-        footer { background: #1a252f; color: #bdc3c7; padding: 60px 0 20px 0; font-size: 0.85rem; }
-        footer h6 { color: white; font-weight: bold; border-bottom: 2px solid var(--sid-green); display: inline-block; padding-bottom: 5px; margin-bottom: 20px; }
-        footer a { color: #bdc3c7; text-decoration: none; }
-        footer a:hover { color: var(--sid-green); }
+        footer { background: #1a252f; color: #bdc3c7; padding: 60px 0 0 0; font-size: 0.88rem; }
+        footer h6 { color: white; font-weight: bold; border-bottom: 2px solid var(--sid-green); display: inline-block; padding-bottom: 5px; margin-bottom: 20px; text-transform: uppercase; }
+        footer a { color: #bdc3c7; text-decoration: none; transition: 0.3s; }
+        footer a:hover { color: var(--sid-green); padding-left: 5px; }
+        .footer-bottom { background: #111a22; padding: 25px 0; margin-top: 50px; font-size: 0.8rem; }
+        .floating-wa { position: fixed; width: 60px; height: 60px; bottom: 30px; right: 30px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 5px 15px rgba(0,0,0,0.2); z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none; }
     </style>
 </head>
 <body>
 
+<a href="https://wa.me/628123456789" class="floating-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<div class="top-bar d-none d-md-block text-center text-white">
+    <div class="container">
+        <marquee>Selamat Datang di Portal Resmi Desa Cisewu, Kabupaten Garut. Status IDM 2026: DESA MANDIRI.</marquee>
+    </div>
+</div>
+
 <div class="header-main">
-    <div class="container d-flex justify-content-between align-items-center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Garut_Regency_Logo.png" class="logo-img">
-        <div class="text-center">
-            <h2 class="mb-0 fw-bold" style="color: var(--sid-blue);">PEMERINTAH DESA CISEWU</h2>
-            <p class="mb-0 text-muted fw-bold">Kabupaten Garut, Jawa Barat</p>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-3 col-md-2 text-start">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Garut_Regency_Logo.png" alt="Logo Garut" class="logo-img">
+            </div>
+            <div class="col-6 col-md-8 text-center">
+                <h1 class="mb-0 fw-bold" style="color: var(--sid-blue); letter-spacing: -1px;">PEMERINTAH DESA CISEWU</h1>
+                <p class="mb-0 text-muted fw-bold">Kecamatan Cisewu, Kabupaten Garut, Jawa Barat</p>
+                <p class="small text-success fw-bold mb-0">"Membangun Desa, Sejahterakan Warga"</p>
+            </div>
+            <div class="col-3 col-md-2 text-end">
+                <img src="logo-desa.png" alt="Logo Desa" class="logo-img" onerror="this.src='https://via.placeholder.com/85?text=LOGO+DESA'">
+            </div>
         </div>
-        <img src="https://via.placeholder.com/80?text=LOGO+DESA" class="logo-img">
     </div>
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-dark nav-sid sticky-top">
     <div class="container">
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDesa">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuDesa">
             <ul class="navbar-nav w-100 justify-content-between">
                 <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
-                <li class="nav-item"><a class="nav-link" href="#sejarah">Sejarah</a></li>
-                <li class="nav-item"><a class="nav-link" href="#statistik">Statistik</a></li>
-                <li class="nav-item"><a class="nav-link" href="#layanan">Pelayanan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#profil">Profil & Sejarah</a></li>
+                <li class="nav-item"><a class="nav-link" href="#layanan">Layanan Online</a></li>
                 <li class="nav-item"><a class="nav-link" href="#lapak">Lapak Desa</a></li>
-                <li class="nav-item"><a class="nav-link" href="#kontak text-danger">Telepon Penting</a></li>
+                <li class="nav-item"><a class="nav-link" href="#statistik">Statistik</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
             </ul>
         </div>
     </div>
@@ -57,40 +79,35 @@
 
 <div class="container mt-5">
     <div class="row">
-        <div class="col-lg-8" id="sejarah">
+        <div class="col-lg-8" id="profil">
             <div class="sejarah-full shadow-sm">
-                <h3 class="fw-bold mb-4 border-bottom pb-2 text-success">Sejarah Desa Cisewu</h3>
-                <p>Menurut Sesepuh yang merupakan keturunan <span class="highlight">Dalem Bintang</span> (Dalem yang mendapatkan penghargaan dari pemerintah atas kemampuan dan kecakapan kepemimpinannya) yang merupakan keturunan <span class="highlight">Dalem Sawidak</span>, serta beberapa sumber lainnya bahwa Cisewu pada awalnya hanya sebuah kampung yang bernama <span class="highlight">Ciangsara</span> yang berarti <span class="highlight text-danger">kesengsaraan</span>.</p>
-                <p>Pada waktu pejajahan kolonial Belanda yaitu sekitar abad ke-18 Ciangsara dikenal sangat angker yang menimbulkan kesengsaraan terutama bagi mereka yang dibuang oleh kolonial Belanda maupun para pejuang yang lari ke tempat ini guna melakukan penyusunan kekuatan untuk melawan penjajahan Belanda. Sehingga dikenalah nama <span class="highlight">Pamubusan</span> yang berarti tempat bersembunyi para pejuang kemerdekaan (Pegunungan Puncak Ali).</p>
-                <p>Para pejuang yang berada di Ciangsara berasal dari beberapa wilayah yang berada di kekuasaan Kerajaan Padjajaran Jawa Barat seperti Tasikmalaya (Kerajaan Galuh), Nangkaruka (Bungbulang), Jampang-Surade (Sukabumi), dan Bandung. Sedangkan dari Jawa Tengah berasal dari kekuasaan Kerajaan Solo. Dari asal-usul keturunan penduduk yang berada di Ciangsara (Cisewu saat ini) dihuni oleh masyarakat pendatang, yang mayoritas kaum pendatang tersebut berasal dari daerah Tasikmalaya.</p>
-                <p>Untuk mempertahankan keturunannya, mereka melakukan perkawinan antar saudara agar garis keturunan mereka tidak terputus. Selain itu perkawinan tersebut bertujuan untuk mempererat silaturahmi, mempertahankan warisan leluhur serta secara politisnya memperkuat persatuan dan kesatuan guna melawan penjajah dari tanah Cisewu.</p>
-                <p>Mayoritas para pejuang yang berada di Ciangsara (Cisewu) berasal dari keturunan <span class="highlight">Menak atau Ningrat</span>, itu terlihat dari silsilah keturunan seperti keturunan Wira Atmadja, Sura Atmadja, Natapradja, Singadireja, Raksadireja, Barata, Nataprawira, Natadireja dll. Para menak, wadana dan dalem biasa melakukan musyawarah khusus para dalem di suatu tempat datar/lapang yang sekarang dikenal dengan nama <strong>“Datar Dilem”</strong> atau pendekatan dari kata datar dan dalem.</p>
-                <p>Selain musyawarah khusus di “Datar Dilem” yang hanya dihadiri oleh menak dan dalem, ada musyawarah terbuka yang diikuti oleh para Dalem, menak dan masyarakat setempat. Biasanya mereka berkumpul di suatu tempat guna membahas strategi melawan penjajahan kolonial Belanda serta menyusun strategi pembangunan dan pemerintahan masa itu dan masa yang akan datang. Musyawarah tersebut dilaksanakan di tempat terbuka dengan beralaskan <strong>“samak daun gebang”</strong> (tikar). Untuk mempermudah penyebutan tempat perkumpulan tersebut maka dinamakan <span class="highlight text-primary">Cisamak</span>.</p>
-                <p>Selama musyawarah berlangsung para jawara atau para pendekar bertugas menjaga keamanan dan mengawasi kelangsungan musyawarah, hal itu dilakukan dengan bergiliran atau piket jaga. Tempat jaga tersebut dinamakan <span class="highlight">Piket</span> (Kampung Piket sekarang) dan <span class="highlight">Panenjoan</span> (tempat meninjau musuh) yang terletak di gunung Puncak Ali.</p>
-                <p>Kata <strong>Cisewu</strong> berasal dari sebuah rencana besar hasil musyawarah para dalem, menak, tokoh masyarakat dan pemerintahan Belanda saat itu yang berkaitan dengan kesejahteraan masyarakat, baik Cisewu maupun daerah lainya seperti Cikarang, Cimahi, Cidamar dan Cianjur Selatan berupa pengairan dan pembangkit listrik tenaga air. Mengenai jalan suhunan sudah mulai dirintis dan diperjuangkan oleh seorang dosen Universitas Padjajaran Bandung yang bernama <span class="highlight">DR.H. GUNAWAN UNDANG, M.Si.</span> melalui Konsep “JAMPARING”. Namun saat ini masyarakat masih mempercayai sebagai mitos atau “Cacandran Kolot Bareto”.</p>
-                <p>Dalam bentuk miniaturnya kata Cisewu itu dikaitkan dengan sebuah kolam yang dikenal dengan nama <strong>“BALONG SIRAH”</strong>. Balong sirah saat ini selain digunakan sebagai tempat penampungan air tanah guna untuk memenuhi kebutuhan air masyarakat, juga dikenal sebagai tempat yang berpetuah bagi orang-orang yang mempercayainya. Konon, air balong sirah dapat digunakan untuk pengobatan alternatif ataupun keinginan lainnya seperti kenaikan pangkat jabatan, jodoh, menjadi pejabat, kekayaan, kesaktian dan lain-lain.</p>
-                <p>Menurut asal kata, “Cisewu” berasal dari dua kata “Ci” dan “Sewu”. “Ci” (bahasa Sunda) yang berarti air, sedangkan kata “Sewu” (bahasa Jawa) berarti seribu. Dengan demikian Cisewu dapat diartikan <span class="highlight text-success">air seribu</span> atau seribu kapiler, yang orientasinya yaitu dapat memberikan kehidupan atau kesejahteraan bagi ribuan orang di sekitarnya.</p>
-            </div>
+                <h2><i class="fas fa-history text-success me-3"></i>Sejarah Desa Cisewu</h2>
+                <p>Menurut Sesepuh keturunan <span class="highlight">Dalem Bintang</span> (Dalem yang mendapatkan penghargaan dari pemerintah atas kemampuan kepemimpinannya) yang merupakan keturunan <span class="highlight">Dalem Sawidak</span>, Cisewu awalnya bernama <span class="highlight">Ciangsara</span> (Kesengsaraan). Pada abad ke-18, tempat ini dikenal sangat angker dan menjadi tempat persembunyian (<span class="highlight">Pamubusan</span>) pejuang kemerdekaan di <span class="highlight">Pegunungan Puncak Ali</span>.</p>
 
-            <div id="lapak" class="mt-4">
-                <h3 class="fw-bold mb-4 border-bottom pb-2">Lapak Desa (Produk Unggulan)</h3>
-                <div class="row g-4 text-center">
+                <p>Para pejuang berasal dari wilayah Kerajaan Padjajaran seperti Tasikmalaya, Bungbulang, Sukabumi, dan Bandung. Untuk mempertahankan keturunan dan memperkuat persatuan melawan penjajah, mereka melakukan perkawinan antar saudara. Mayoritas dihuni oleh kaum pendatang dari Tasikmalaya yang keturunan <span class="highlight">Menak atau Ningrat</span>.</p>
+
+                <p>Nama-nama daerah seperti <span class="highlight">Datar Dilem</span> (tempat musyawarah para Dalem), <span class="highlight">Cisamak</span> (musyawarah beralaskan samak/tikar), hingga <span class="highlight">Piket & Panenjoan</span> lahir dari sejarah perjuangan ini. Nama <strong>Cisewu (Air Seribu)</strong> bermakna sumber kesejahteraan bagi ribuan orang, terinspirasi dari kekayaan mata air dan keberadaan <span class="highlight">Balong Sirah</span> yang dikeramatkan sebagai tempat yang berpetuah.</p>
+
+                <hr>
+                
+                <h3 class="fw-bold mb-4 mt-5" id="lapak">Lapak Desa (Produk Unggulan)</h3>
+                <div class="row g-4">
                     <div class="col-md-6">
                         <div class="product-card p-3 bg-white">
                             <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded mb-3">
                             <h6 class="fw-bold">Kopi Robusta Puncak Ali</h6>
-                            <p class="text-success fw-bold">Rp 45.000</p>
-                            <p class="small text-muted">Original 100%, Medium Roasting, Proses Natural.</p>
-                            <button class="btn btn-success btn-sm w-100" onclick="alert('Order via WhatsApp ke Admin Desa')">Check Out</button>
+                            <p class="text-success fw-bold">Rp 45.000 / 250gr</p>
+                            <p class="small text-muted">Original 100% dari pegunungan Cisewu. Aroma kuat & nikmat.</p>
+                            <button class="btn btn-success btn-sm w-100" onclick="alert('Order terkirim ke WA Admin BUMDes!')">Check Out</button>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="product-card p-3 bg-white">
                             <img src="https://images.unsplash.com/photo-1589182397057-b1617b71ad3a?auto=format&fit=crop&w=400&q=80" class="img-fluid rounded mb-3">
                             <h6 class="fw-bold">Gula Aren Murni</h6>
-                            <p class="text-success fw-bold">Rp 25.000</p>
-                            <p class="small text-muted">Hasil nira murni pohon aren Cisewu, tanpa pengawet.</p>
-                            <button class="btn btn-success btn-sm w-100" onclick="alert('Order via WhatsApp ke Admin Desa')">Check Out</button>
+                            <p class="text-success fw-bold">Rp 25.000 / Bungkus</p>
+                            <p class="small text-muted">Hasil nira murni pohon aren pilihan tanpa pemanis buatan.</p>
+                            <button class="btn btn-success btn-sm w-100" onclick="alert('Order terkirim ke WA Admin BUMDes!')">Check Out</button>
                         </div>
                     </div>
                 </div>
@@ -100,29 +117,29 @@
         <div class="col-lg-4">
             <div class="widget-box shadow-sm" id="statistik">
                 <div class="widget-title">Statistik Penduduk</div>
-                <div class="p-3"><canvas id="chartPopulasi"></canvas></div>
+                <div class="p-3"><canvas id="chartPopulasi" height="180"></canvas></div>
             </div>
 
             <div class="widget-box shadow-sm" id="layanan">
-                <div class="widget-title">Pelayanan Online</div>
+                <div class="widget-title"><i class="fas fa-edit me-2"></i>Layanan Online</div>
                 <div class="p-4 bg-light">
                     <form>
-                        <input type="text" class="form-control mb-2" placeholder="Nama Lengkap">
-                        <input type="number" class="form-control mb-2" placeholder="NIK">
-                        <select class="form-select mb-2">
+                        <input type="text" class="form-control form-control-sm mb-2" placeholder="Nama Lengkap">
+                        <input type="number" class="form-control form-control-sm mb-2" placeholder="NIK">
+                        <select class="form-select form-select-sm mb-2">
                             <option>Surat Keterangan Usaha</option>
                             <option>Domisili</option>
                             <option>SKTM</option>
                         </select>
-                        <button type="button" class="btn btn-success w-100" onclick="alert('Data Terkirim!')">Kirim</button>
+                        <button type="button" class="btn btn-success btn-sm w-100" onclick="alert('Permohonan Diterima!')">Kirim ke Desa</button>
                     </form>
                 </div>
             </div>
 
             <div class="widget-box shadow-sm">
-                <div class="widget-title">Lokasi Kantor Desa (Akurat)</div>
+                <div class="widget-title">Lokasi Kantor Desa (Presisi)</div>
                 <div class="p-0">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1151.7891242398246!2d107.5054174!3d-7.5186278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ca4c4a9e67779%3A0x6cab1a9466fa1a90!2sKantor%20Desa%20Cisewu!5e0!3m2!1sid!2sid!4v1704283811234!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d107.5055!3d-7.5186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e66191c9ae67579%3A0x6cab109466fa1a90!2sKantor%20Desa%20Cisewu!5e0!3m2!1sid!2sid!4v1703940000000" width="100%" height="250" style="border:0;" allowfullscreen=""></iframe>
                 </div>
             </div>
         </div>
@@ -130,54 +147,60 @@
 </div>
 
 <footer id="kontak">
-    <div class="container">
+    <div class="container text-start">
         <div class="row g-4">
-            <div class="col-md-3">
-                <h6>KANTOR DESA</h6>
-                <p class="small">Jl. Wirabhakti No. 26, Kec. Cisewu, Kab. Garut 44166.<br>Telp: (0262) 123456</p>
-                <div class="fs-4 mt-2">
-                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-white me-2"><i class="fab fa-youtube"></i></a>
+            <div class="col-lg-3 col-md-6">
+                <h6>Profil Kantor</h6>
+                <p class="small">Jl. Wirabhakti No. 26, RT.003/RW.001, Kec. Cisewu, Garut, Jawa Barat 44166.</p>
+                <p class="small">Telp: (0262) 123456</p>
+                <div class="mt-3">
+                    <a href="#" class="me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="me-2"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="col-md-3">
-                <h6>TELEPON PENTING</h6>
-                <p class="small mb-1">UPT Puskesmas: 0852-XXXX-XXXX</p>
-                <p class="small mb-1">PLN Cisewu: (0262) XXXXXX</p>
-                <p class="small mb-1">Mobil Siaga: 0812-XXXX-XXXX</p>
-                <p class="small mb-1">Satlinmas: 0821-XXXX-XXXX</p>
+            <div class="col-lg-3 col-md-6">
+                <h6>Telepon Penting</h6>
+                <ul class="list-unstyled small">
+                    <li>Puskesmas Cisewu: 0852-XXXX</li>
+                    <li>PLN Cisewu: (0262) XXXX</li>
+                    <li>Satlinmas/Mobil Siaga: 0812-XXXX</li>
+                </ul>
             </div>
-            <div class="col-md-3">
-                <h6>LINK GARUT</h6>
+            <div class="col-lg-3 col-md-6">
+                <h6>Link Garut</h6>
                 <ul class="list-unstyled small">
                     <li><a href="https://disdukcapil.garutkab.go.id">Disdukcapil Garut</a></li>
                     <li><a href="https://pastioke.garutkab.go.id">Pasti Oke Garut</a></li>
                     <li><a href="https://garutkab.bps.go.id">BPS Garut</a></li>
                 </ul>
             </div>
-            <div class="col-md-3">
-                <h6>NASIONAL</h6>
+            <div class="col-lg-3 col-md-6">
+                <h6>Link Instansi</h6>
                 <ul class="list-unstyled small">
                     <li><a href="https://kemendesa.go.id">Kemendesa</a></li>
                     <li><a href="https://kemendagri.go.id">Kemendagri</a></li>
                 </ul>
             </div>
         </div>
-        <hr>
-        <p class="text-center small mb-0">© 2026 Pemerintah Desa Cisewu - Kabupaten Garut</p>
+    </div>
+    <div class="footer-bottom text-center">
+        <p class="mb-0 opacity-50 small">© 2026 Pemerintah Desa Cisewu. All Rights Reserved.</p>
     </div>
 </footer>
 
 <script>
     const ctx = document.getElementById('chartPopulasi').getContext('2d');
     new Chart(ctx, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
             labels: ['Pria', 'Wanita'],
-            datasets: [{ data: [2300, 2200], backgroundColor: ['#2980b9', '#e74c3c'] }]
-        }
+            datasets: [{ data: [2300, 2200], backgroundColor: ['#2980b9', '#e74c3c'], borderWidth: 0 }]
+        },
+        options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
     });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
